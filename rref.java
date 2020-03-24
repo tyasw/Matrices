@@ -3,38 +3,6 @@
  * Created by: William Tyas
  * Date: 9/3/17
  * Description: Returns the reduced row echelon form of a matrix
- * -------------------------------------------------------------------
- * CHANGE LOG:
- * 9/3/17: Working prototype finished.
- * 9/8/17: Added ability to calculate rref of matrices of any
- * 		dimension. Added check on matrix dimensions to make sure
- *		height is not greater than width. 		
- * 9/11/17: Implemented forward and backward phases. The rref of a
- * 		matrix is now calculated the same way as in real life.
- * -------------------------------------------------------------------
- * -------------------------------------------------------------------
- * BUG FIXES:
- * 9/3/17: Incorrect solution sometimes given when more than
- * 		one solution exists. FIXED 9/4/17 - bug caused by rounding
- *		errors and program not taking into account error ranges. For
- * 		example, the program didn't recognize that 9.9E-6 is very
- * 		close to 0.
- * 9/7/17: Incorrect solution when pivot is 0. FIXED 9/7/17 - 
- * 		caused by not changing pivot to nonzero value in row. Will 
- *		need to modify to change pivot to first nonzero value in row
- *		once bigger matrices feature is added.
- * 9/10/17: Incorrect solution when ones don't line up in rref.
- *		Fixed 9/10/17 - caused by not looking for next nonzero column.
- *		Major revision to way rref is calculated. Previously, assumed
- *		that no row swaps were needed. Fixed to perform row swaps
- *		when rows are out of order. Implemented feature to change
- *		pivot to next nonzero value in row.
- * -------------------------------------------------------------------
- * -------------------------------------------------------------------
- * FUTURE WISHES:
- * Ability to calculate rref of matrices of varying dimensions.
- * 		Completed 9/8/17
- * -------------------------------------------------------------------
  */
 import java.util.*;
 
